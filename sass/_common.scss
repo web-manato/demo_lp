@@ -1,0 +1,89 @@
+@use "_mixin";
+@use "_variable" as g;
+
+// ベーススタイル
+body{
+    font-size: 14px;
+    font-family: g.$font-family-jp;
+    color: g.$font-color-base;
+    letter-spacing: 0.05em;
+}
+// PC
+@include mixin.breakpoint("pc"){
+    body{
+        font-size: 16px;
+    }
+}
+
+// ブロックモジュール
+// コンテンツ幅
+.bl_cont_inner{
+    width: 90%;
+    max-width: 1080px;
+    padding-bottom: 23px;
+    margin: 0 auto;
+}
+// PC
+@include mixin.breakpoint("pc"){
+    .bl_cont_inner{
+        width: 80%;
+    }
+}
+// 画像
+.bl_imgWrapper img{
+    width: 100%;
+}
+
+// ユニークモジュール
+.un_lb_reverse{
+    display: none;
+}
+@include mixin.breakpoint("pc"){
+    .un_lb{
+        display: none;
+    }
+    .un_lb_reverse{
+        display: block;
+    }
+}
+
+// レイアウト
+.ly_cont{
+    padding: 64px 0;
+}
+@include mixin.breakpoint("pc"){
+    .ly_cont{
+        padding: 94px 0;
+    }
+    .ly_cont__cta{
+        padding: 64px 0;
+    }
+}
+.ly_btn{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+
+// ブロックモジュール
+.bl_contBg_beige{
+    background: g.$bg-primary-extra-light;
+}
+.bl_contBg_brown{
+    background: g.$bg-secondary;
+}
+
+// エレメントモジュール
+.el_secTtl{
+    font-size: 22px;
+    font-weight: 600;
+    color: g.$font-color-primary;
+    text-align: center;
+}
+@include mixin.breakpoint("pc"){
+    .el_secTtl{
+        font-size: 32px;
+    }
+}

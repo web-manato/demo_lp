@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://www.google.com/s2/favicons?domain=ファビコンを取得したいサイトURL">
+    <link rel="apple-touch-icon-precomposed" href="画像のURL" />
+    <meta name="msapplication-TileImage" content="画像のURL" />
+    <meta name="msapplication-TileColor" content="カラーコード（例：#F89174）"/>
+    <title>デモページ</title>
+    <meta name="description" content="まなとが制作したホームページデモです。">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- ogp -->
+	<meta property="og:url" content="hp-demo1.web-manato.com " />
+	<meta property="og:type" content=" website" />
+	<meta property="og:title" content=" デモページ" />
+	<meta property="og:description" content="まなとが制作したホームページデモです。 " />
+	<meta property="og:site_name" content="サイト名" />
+	<meta property="og:image" content=" サムネイル画像の URL" />
+
+    <!-- js -->
+    <script src="js/main.js" type="module"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header class="ly_header bl_header">
+        <div class="bl_header_inner">
+            <h1 class="bl_header_logo">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/sp_header_logo.svg">
+                    <img src="img/pc_header_logo.svg" alt="CWstudio">
+                </picture>
+            </h1>
+            <div class="bl_header_btnGroup">
+                <a href="#" class="bl_header_btn">ログイン</a>
+                <a href="#" class="bl_header_btn2">新規登録</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- キービジュアル -->
+        <section class="ly_kv bl_kv">
+            <div class="bl_kv_inner">
+
+                <!-- メインコピー・タグ部分 -->
+                <div class="bl_kv_body">
+                    <p class="bl_kv_subCopy">月500円で使える小説執筆ツール</p>
+                    <h2 class="bl_kv_mainCopy">小説の執筆を<br class="un_lb">圧倒的に効率化</h2>
+                    <ul class="bl_kv_function_list">
+                        <li class="bl_kv_function_listItem">本編の執筆</li>
+                        <li class="bl_kv_function_listItem">物語の設定</li>
+                        <li class="bl_kv_function_listItem">プロット作成</li>
+                        <li class="bl_kv_function_listItem">人物設定</li>
+                        <li class="bl_kv_function_listItem">時系列整理</li>
+                        <li class="bl_kv_function_listItem">用語集設定</li>
+                        <li class="bl_kv_function_listItem">バージョン管理</li>
+                        <li class="bl_kv_function_listItem">不必要な機能は非表示</li>
+                        <li class="bl_kv_function_listItem">その他便利な機能</li>
+                    </ul>
+                </div>
+
+                <!-- フォーム部分 -->
+                <div class="bl_kv_formGroup">
+                    <div class="bl_kv_form_microCopy_group">
+                        <span class="bl_kv_form_microCopy_line bl_kv_form_microCopy_line_left"></span>
+                        <p class="bl_kv_form_microCopy">無料登録</p>
+                        <span class="bl_kv_form_microCopy_line bl_kv_form_microCopy_line_right"></span>
+                    </div>
+                    <form action="#" class="bl_kv_form">
+                        <label for="mail-address" class="bl_kv_form_inputGroup">
+                            メールアドレス
+                            <input type="email" id="mail-address">
+                        </label>
+                        <label for="passWord" class="bl_kv_form_inputGroup">
+                            パスワード
+                            <input type="passWord" id="password">
+                        </label>
+                        <label class="bl_kv_form_inputGroup bl_kv_form_inputGroup_checkBox">
+                            <input type="checkbox">
+                            <div><a href="#">利用規約</a>に同意する</div>
+                        </label>
+                        <div class="bl_kv_form_btnWrapper">
+                            <input type="submit" value="登録する" class="bl_kv_form_submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 動画でわかるCWstudio -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <h2 class="el_secTtl">動画でわかるCWstudio</h2>
+
+                <!-- Youtubeの動画を埋め込み -->
+                <div class="bl_movieWrapper js-fadeIn">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lfVA-5qHiUM?si=5RsyrcwuheFVu8zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="ly_cont bl_contBg_beige">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <h2 class="el_secTtl">9つの機能・特徴</h2>
+
+                <div class="bl_feature">
+
+                    <!-- 特徴1 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;01</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">本編の執筆</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                本編の執筆ができます。フルスクリーンモードで執筆に集中することが出来ます。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴2 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT2">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;02</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">物語の設定</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                テーマ/世界観/時代設定/物語のゴール/など、自由に物語の設定を登録できます。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴3 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT3">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;03</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">プロット作成</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                起承転結/三幕構成/序破急/など、自由に項目を設定してプロットを作ることが出来ます。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴4 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT4">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl">POINT&nbsp;04</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">人物設定</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                登場人物のキャラクター設定を自由に登録できます。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴5 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT5">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;05</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">時系列整理</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                物語の時系列を自由に登録できます。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴6 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT6">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;06</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">用語集設定</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                小説に使用する用語とその定義を自由に登録できます。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴7 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT7">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;07</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">バージョン管理</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                過去の執筆状態を確認することや戻すことが可能です。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴8 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT8">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;08</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">バックアップ</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                執筆した文章はもちろん、物語の設定やプロットもテキストデータでバックアップを取ることが可能です。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- 特徴9 -->
+                    <figure class="bl_feature_item">
+                        <picture class="bl_feature_item_imgWrapper">
+                            <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
+                            <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
+                            <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
+                            <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
+                            <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                            <img src="img/pc_feature_img-3500px.png" alt="POINT9">
+                        </picture>
+                        <figcaption class="bl_feature_item_txtGroup">
+                            <span class="bl_feature_item_subTtl js-fadeIn">POINT&nbsp;09</span>
+                            <h3 class="bl_feature_item_ttl js-fadeIn">不必要な機能は非表示</h3>
+                            <p class="bl_feature_item_txt js-fadeIn">
+                                機能のオンオフは自由に設定できます。不必要で邪魔な機能がメニューに表示されることはありません。
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <div class="bl_feature_item bl_feature_item_function">
+                        <h3 class="bl_feature_item_ttl">そのほかの便利な機能</h3>
+                        <ul class="bl_feature_item_functionList">
+                            <li class="bl_feature_item_functionList_item js-fadeIn">
+                                <img src="img/feature_ico.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <p class="bl_feature_item_functionList_item_txt">長時間の執筆のためにダークモード搭載</p>
+                            </li>
+                            <li class="bl_feature_item_functionList_item js-fadeIn">
+                                <img src="img/feature_ico2.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <p class="bl_feature_item_functionList_item_txt">縦書きプレビュー可能</p>
+                            </li>
+                            <li class="bl_feature_item_functionList_item js-fadeIn">
+                                <img src="img/feature_ico3.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <p class="bl_feature_item_functionList_item_txt">各項目は自由に並び替えが可能</p>
+                            </li>
+                            <li class="bl_feature_item_functionList_item js-fadeIn">
+                                <img src="img/feature_ico4.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <p class="bl_feature_item_functionList_item_txt">スマホでも執筆可能</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="ly_cont ly_cont__cta bl_contBg_brown">
+            <div class="bl_cont_inner bl_cont_inner__80">
+                <h2 class="bl_cta_ttl">今なら30日全機能無料で<br class="un_lb">使用できます！</h2>
+                <p class="bl_cta_txt">月500円で使える小説執筆ツール</p>
+                <div class="ly_btn">
+                    <a href="#" class="bl_cta_btn">試しに無料で使ってみる</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- プラン・料金 -->
+        <section class="ly_cont">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <h2 class="el_secTtl">プラン・料金</h2>
+
+                <div class="bl_plan_cardGroup">
+                    <!-- 無料プランカード -->
+                    <div class="bl_plan_card bl_plan_card__free js-fadeIn">
+                        <div class="bl_plan_card_ttlWrapper bl_plan_card_ttlWrapper__free">
+                            <h3 class="bl_plan_card_ttl bl_plan_card_ttl__free">無料プラン</h3>
+                        </div>
+                        <div class="bl_plan_card_txtGroup">
+                            <span class="bl_plan_card_txt">月額使用料</span>
+                            <p class="bl_plan_card_price">0円</p>
+                        </div>
+                        <div class="bl_plan_card_feature_ttlWrapper">
+                            <h4 class="bl_plan_card_feature_ttl">主な機能</h4>
+                        </div>
+                        <ul class="bl_plan_card_featureList">
+                            <li class="bl_plan_card_featureList_item">作成できる小説の数は1つ</li>
+                            <li class="bl_plan_card_featureList_item">本編の執筆</li>
+                        </ul>
+                    </div>
+                    <!-- 有料プランカード -->
+                    <div class="bl_plan_card bl_plan_card__paid js-fadeIn">
+                        <div class="bl_plan_card_ttlWrapper bl_plan_card_ttlWrapper__paid">
+                            <h3 class="bl_plan_card_ttl bl_plan_card_ttl__paid">有料プラン</h3>
+                        </div>
+                        <div class="bl_plan_card_txtGroup">
+                            <span class="bl_plan_card_txt bl_plan_card_txt__paid">月額使用料</span>
+                            <p class="bl_plan_card_price bl_plan_card_price__paid">500円</p>
+                        </div>
+                        <div class="bl_plan_card_feature_ttlWrapper">
+                            <h4 class="bl_plan_card_feature_ttl bl_plan_card_feature_ttl__paid">主な機能</h4>
+                        </div>
+                        <ul class="bl_plan_card_featureList bl_plan_card_featureList__paid">
+                            <li class="bl_plan_card_featureList_item">作成できる小説の数は無制限</li>
+                            <li class="bl_plan_card_featureList_item">本編の執筆</li>
+                            <li class="bl_plan_card_featureList_item">物語の設定</li>
+                            <li class="bl_plan_card_featureList_item">プロット</li>
+                            <li class="bl_plan_card_featureList_item">人物</li>
+                            <li class="bl_plan_card_featureList_item">時系列</li>
+                            <li class="bl_plan_card_featureList_item">その他のすべての機能</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="ly_cont bl_contBg_beige">
+            <div class="bl_cont_inner">
+
+                <!-- セクションタイトル -->
+                <h2 class="el_secTtl">よくあるご質問</h2>
+
+                <!-- 質問群 -->
+                <div class="bl_faqGroup">
+
+                    <!-- 質問1 -->
+                    <div class="bl_faq">
+                        <h3 class="bl_faq_question">支払い手段を教えてください</h3>
+                        <div class="bl_faq_answerWrapper">
+                            <p class="bl_faq_answer">
+                                支払いはクレジットカード払いのみになります。対応カードは下記になります。<br>
+                                VISA / Master Card / JCB / American / Express / Discover / Diners
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 質問2 -->
+                    <div class="bl_faq">
+                        <h3 class="bl_faq_question">有料プランから無料プランに変更したらデータは消えてしまいますか？</h3>
+                        <div class="bl_faq_answerWrapper">
+                            <p class="bl_faq_answer">
+                                無料プランは作成できる小説の数は1つとなります。
+                                有料プランで2つ以上作成している場合は、プラン変更時に残す小説を1つ選択することになります。
+                                それ以外は消えてしまうので、変更前にバックアップでデータをご自身のPCに保存しておくことをおすすめします。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 質問3 -->
+                    <div class="bl_faq">
+                        <h3 class="bl_faq_question">操作は難しくないですか？</h3>
+                        <div class="bl_faq_answerWrapper">
+                            <p class="bl_faq_answer">
+                                直感的に操作できるようになっています。<a href="#">使い方ガイド</a>もあるので、安心して使っていただけると思います。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 質問4 -->
+                    <div class="bl_faq">
+                        <h3 class="bl_faq_question">領収書は発行できますか？</h3>
+                        <div class="bl_faq_answerWrapper">
+                            <p class="bl_faq_answer">
+                                管理画面からpdfで発行が可能です。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 質問5 -->
+                    <div class="bl_faq">
+                        <h3 class="bl_faq_question">見た目を確認できますか？</h3>
+                        <div class="bl_faq_answerWrapper">
+                            <p class="bl_faq_answer">
+                                デモページをご用意しているので、<a href="#">こちら</a>からご覧ください。
+                                本編の執筆は無料プランでも可能なので、まずは無料プランで使っていただく事もできます。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 質問6 -->
+                    <div class="bl_faq">
+                        <h3 class="bl_faq_question">動作環境を教えてください</h3>
+                        <div class="bl_faq_answerWrapper">
+                            <p class="bl_faq_answer">
+                                下記の環境でお使いいただけます。
+                                PC：Google Chrome / Safari / FireFox / Edge / 各最新版<br>
+                                スマートフォン：iOS Safari / Android Chrome / 各最新版<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="ly_cont ly_cont__cta bl_contBg_brown">
+            <div class="bl_cont_inner bl_cont_inner__80">
+                <h2 class="bl_cta_ttl">今なら30日全機能無料で<br class="un_lb">使用できます！</h2>
+                <p class="bl_cta_txt">月500円で使える小説執筆ツール</p>
+                <div class="ly_btn">
+                    <a href="#" class="bl_cta_btn">試しに無料で使ってみる</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ly_footer">
+
+        <div class="bl_footer_inner">
+            <!-- ロゴ -->
+            <picture class="bl_footer_logo">
+                <source media="(max-width: 768px)" srcset="img/sp_footer_logo.svg">
+                <img src="img/pc_footer_logo.svg" alt="CWstudio">
+            </picture>
+            <!-- フッターナビゲーション -->
+            <nav class="bl_footer_nav">
+                <ul class="bl_footer_navList">
+                    <li class="bl_footer_navList_item">
+                        <a href="#">会社概要</a>
+                    </li>
+                    <li class="bl_footer_navList_line"></li>
+                    <li class="bl_footer_navList_item">
+                        <a href="#">利用規約</a>
+                    </li>
+                    <li class="bl_footer_navList_line"></li>
+                    <li class="bl_footer_navList_item">
+                        <a href="#">プライバシーポリシー</a>
+                    </li>
+                    <li class="bl_footer_navList_line"></li>
+                    <li class="bl_footer_navList_item">
+                        <a href="#">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- コピーライト -->
+            <div class="bl_footer_copyRight_wrapper">
+                <small class="bl_footer_copyRight">© 2025 CWstudio</small>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

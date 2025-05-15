@@ -1,0 +1,86 @@
+@use "_mixin";
+@use "_variable" as g;
+
+// レイアウト
+.ly_header{
+    width: 100%;
+    padding: 13px 0;
+    position: fixed;
+    z-index: 999;
+}
+@include mixin.breakpoint("pc"){
+    .ly_header{
+        padding: 18px 0;
+    }
+}
+
+// ブロックモジュール
+.bl_header{
+    background: #fff;
+    border-bottom: 2px solid g.$border-primary;
+}
+.bl_header_inner{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+}
+// ボタン群
+.bl_header_btnGroup{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .bl_header_btn{
+        display: inline-block;
+        width: 85px;
+        height: auto;
+        text-align: center;
+        border: 2px solid g.$border-primary;
+        color: g.$font-color-primary;
+        padding: 11px 0;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 36px;
+        transition: all 0.3s;
+    }
+    .bl_header_btn2{
+        display: inline-block;
+        width: 85px;
+        height: 100%;
+        text-align: center;
+        background: g.$bg-accent;
+        border: 2px solid g.$border-black;
+        color: g.$font-color-black;
+        padding: 11px ;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 36px;
+        transition: all 0.3s;
+    }
+    .bl_header_btn:hover{
+        background: g.$bg-primary;
+        color: g.$font-color-white;
+    }
+    .bl_header_btn2:hover{
+        background: g.$bg-secondary;
+        color: g.$font-color-white;
+    }
+}
+@include mixin.breakpoint("pc"){
+    .bl_header_btnGroup{
+
+        .bl_header_btn{
+            width: 120px;
+            font-size: 16px;
+            padding: 13px 0;
+        }
+        .bl_header_btn2{
+            width: 120px;
+            font-size: 16px;
+            padding: 13px 0;
+        }
+    }
+}

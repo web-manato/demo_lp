@@ -1,0 +1,53 @@
+@use "_mixin";
+@use "_variable" as g;
+
+// レイアウト
+.ly_footer{
+    width: 100%;
+    padding: 40px 0 16px 0;
+}
+
+// ブロックモジュール
+.bl_footer_inner{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 175%;
+}
+// ロゴ
+.bl_footer_logo{
+    display: block;
+    text-align: center;
+}
+// ナビゲーション
+.bl_footer_navList{
+    text-align: center;
+    margin-top: 24px;
+
+    .bl_footer_navList_line{
+        display: none;
+        width: 1px;
+        height: 14px;
+        transform: rotate(15deg);
+        background: g.$border-grey;
+    }
+    .bl_footer_navList_item + .bl_footer_navList_line{
+        margin-top: 3px;
+    }
+}
+@include mixin.breakpoint("pc"){
+    .bl_footer_navList{
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        .bl_footer_navList_line{
+            display: block;
+        }
+    }
+}
+// コピーライト
+.bl_footer_copyRight_wrapper{
+    margin-top: 24px;
+    text-align: center;
+}
