@@ -4,6 +4,6 @@
 
 ### 修正内容
 -   **docs-** README.md、CHANGELOG.mdの追加
-
+-   **style-** cssの微調整
 
 ---

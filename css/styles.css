@@ -686,7 +686,7 @@ body {
 }
 
 .bl_faq_question::before {
-  display: inline-block;
+  display: block;
   content: "Q";
   width: 35px;
   height: 35px;
@@ -708,7 +708,7 @@ body {
 }
 
 .bl_faq_answerWrapper::before {
-  display: inline-block;
+  display: block;
   content: "A";
   width: 35px;
   height: 35px;
