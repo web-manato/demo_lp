@@ -8,5 +8,6 @@
 -   **style-** コード成型
 -   **feat-** meta情報の修正
 -   **feat-** OGP設定
+-   **perf-** WebPの出し分けのためのhtml書き換え
 
 ---
