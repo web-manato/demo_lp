@@ -706,6 +706,7 @@ body {
 }
 .bl_faq_answerWrapper a {
   color: #4895e6;
+  text-decoration: underline;
 }
 
 .bl_faq_answerWrapper::before {
