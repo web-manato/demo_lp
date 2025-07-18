@@ -18,7 +18,7 @@ jobs:
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: './'
-        remoteDir: '/web-manato.com/public_html/portofolio.web-manato.com/demo/cwstudio'
+        remoteDir: '/web-manato.com/public_html/portfolio.web-manato.com/demo/cwstudio'
         exclude: |
           README.md
           README.txt
