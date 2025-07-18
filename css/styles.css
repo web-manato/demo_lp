@@ -434,6 +434,7 @@ body {
 }
 .bl_feature_item_imgWrapper img {
   width: 100%;
+  height: auto;
   box-shadow: 0 7px 25px rgba(106, 106, 106, 0.2);
 }
 

@@ -19,23 +19,23 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" media="print"
+        onload="this.media='all'">
 
     <!-- ogp -->
-    <meta property="og:url" content="portfolio.web-manato.com/lp/lp1/page">
+    <meta property="og:url" content="portfolio.web-manato.com/demo/cwstudio">
     <meta property="og:type" content="website">
     <meta property="og:title" content="LPデモ">
     <meta property="og:description" content="まなとが制作したLPデモです。">
     <meta property="og:site_name" content="LPデモ">
-    <meta property="og:image" content="img/ogp.png">
+    <meta property="og:image" content="https://portfolio.web-manato.com/demo/cwstuio/img/ogp.png">
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
 
     <!-- js -->
     <script src="js/main.js" type="module"></script>
-    <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -135,21 +135,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT1" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -166,21 +160,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT2" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -197,21 +185,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT3" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -228,21 +210,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT4" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -259,21 +235,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT5" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -290,21 +260,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT6" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -321,21 +285,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT7" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -352,21 +310,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT8" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -383,21 +335,15 @@
                         <div class="bl_feature_item_imgWrapper">
                             <picture>
                                 <!-- WebP -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.webp" type="image/webp">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.webp" type="image/webp">
-                                <source srcset="img/pc_feature_img-3500px.webp" type="image/webp">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.webp" type="image/webp">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.webp" type="image/webp">
+                                <source srcset="img/pc_feature_img-2500px.webp" type="image/webp">
 
                                 <!-- 非対応時 -->
-                                <source media="(max-width: 400px)" srcset="img/sp_feature_img-1000px.png">
-                                <source media="(max-width: 500px)" srcset="img/sp_feature_img-1500px.png">
-                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-2000px.png">
-                                <source media="(max-width: 1080px)" srcset="img/pc_feature_img-2500px.png">
-                                <source media="(max-width: 2000px)" srcset="img/pc_feature_img-3000px.png">
+                                <source media="(max-width: 768px)" srcset="img/sp_feature_img-1500px.png">
+                                <source media="(max-width: 1080px)" srcset="img/sp_feature_img-2000px.png">
 
-                                <img src="img/pc_feature_img-3500px.png" alt="POINT1">
+                                <img src="img/pc_feature_img-2500px.png" alt="POINT9" width="324" height="178">
                             </picture>
                         </div>
                         <figcaption class="bl_feature_item_txtGroup">
@@ -413,19 +359,19 @@
                         <h3 class="bl_feature_item_ttl">そのほかの便利な機能</h3>
                         <ul class="bl_feature_item_functionList">
                             <li class="bl_feature_item_functionList_item js-fadeIn">
-                                <img src="img/feature_ico.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <img src="img/feature_ico.svg" alt="" class="bl_feature_item_functionList_item_img" width="44" height="44">
                                 <p class="bl_feature_item_functionList_item_txt">長時間の執筆のためにダークモード搭載</p>
                             </li>
                             <li class="bl_feature_item_functionList_item js-fadeIn">
-                                <img src="img/feature_ico2.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <img src="img/feature_ico2.svg" alt="" class="bl_feature_item_functionList_item_img" width="44" height="44">
                                 <p class="bl_feature_item_functionList_item_txt">縦書きプレビュー可能</p>
                             </li>
                             <li class="bl_feature_item_functionList_item js-fadeIn">
-                                <img src="img/feature_ico3.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <img src="img/feature_ico3.svg" alt="" class="bl_feature_item_functionList_item_img" width="44" height="44">
                                 <p class="bl_feature_item_functionList_item_txt">各項目は自由に並び替えが可能</p>
                             </li>
                             <li class="bl_feature_item_functionList_item js-fadeIn">
-                                <img src="img/feature_ico4.svg" alt="" class="bl_feature_item_functionList_item_img">
+                                <img src="img/feature_ico4.svg" alt="" class="bl_feature_item_functionList_item_img" width="44" height="44">
                                 <p class="bl_feature_item_functionList_item_txt">スマホでも執筆可能</p>
                             </li>
                         </ul>
