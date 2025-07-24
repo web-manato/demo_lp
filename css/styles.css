@@ -424,18 +424,31 @@ body {
   padding: 40px 0;
   border-top: 1px solid #ddd;
 }
+@media screen and (min-width: 768px) {
+  .bl_feature_item {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .bl_feature_item {
+    width: 100%;
+  }
+}
 
 .bl_feature_item_function {
   border-bottom: 1px solid #ddd;
 }
 
-.bl_feature_item_imgWrapper {
-  max-width: 600px;
-}
 .bl_feature_item_imgWrapper img {
   width: 100%;
   height: auto;
   box-shadow: 0 7px 25px rgba(106, 106, 106, 0.2);
+}
+@media screen and (min-width: 1080px) {
+  .bl_feature_item_imgWrapper {
+    max-width: 600px;
+  }
 }
 
 .bl_feature_item_txtGroup {

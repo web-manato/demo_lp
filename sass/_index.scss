@@ -229,16 +229,26 @@
 .bl_feature_item{
     padding: 40px 0;
     border-top: 1px solid g.$border-lightGrey;
+
+    @include mixin.breakpoint("tab") {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @include mixin.breakpoint("pc") {
+        width: 100%;
+    }
 }
 .bl_feature_item_function{
     border-bottom: 1px solid g.$border-lightGrey;
 }
 .bl_feature_item_imgWrapper{
-    max-width: 600px;
     img{
         width: 100%;
         height: auto;
         box-shadow: 0 7px 25px g.$shadow-color;
+    }
+    @include mixin.breakpoint("pc") {
+        max-width: 600px;
     }
 }
 .bl_feature_item_txtGroup{
